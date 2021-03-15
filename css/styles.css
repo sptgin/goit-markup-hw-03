@@ -28,6 +28,7 @@
   --main-default-background-color: #e5e5e5;
   --main-team-background-color: #f5f4fa;
   --main-button-color: #2196f3;
+  --main-button-hover-color: #188ce8;
   --main-button-text-color: #ffffff;
 
   --portfolio-default-background-color: #ffffff;
@@ -153,7 +154,7 @@ body {
 .hero-section-button:hover,
 .hero-section-button:active,
 .hero-section-button:focus {
-  background-color: var(--main-button-color);
+  background-color: var(--main-button-hover-color);
   color: var(--main-button-text-color);
   border-radius: 0px;
 }
