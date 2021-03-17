@@ -41,6 +41,15 @@
   --portfolio-button-hover-color: #2196f3;
   --portfolio-button-hover-text-color: #ffffff;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 
 /*     font-family: 'Oleo Script', cursive;
     font-family: 'Raleway', sans-serif;
