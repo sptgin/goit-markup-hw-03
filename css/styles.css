@@ -162,9 +162,16 @@ body {
 
 /* Секция "Шапка" */
 .hero-section {
+  display: block;
+  text-align: center;
+  height: 600px;
+  width: auto;
+  padding-top: 200px;
   background-color: var(--main-hero-background-color);
 }
 .hero-section-header {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -174,13 +181,14 @@ body {
   color: var(--main-hero-text-color);
 }
 .hero-section-button {
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
   background-color: var(--main-button-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-button-text-color);
   cursor: pointer;
