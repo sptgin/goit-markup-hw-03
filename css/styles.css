@@ -82,16 +82,30 @@ body {
 }
 
 /*  Секция "Верхняя линия" */
-.header * {
+.header {
   background-color: var(--header-background-color);
-  display: inline;
+  display: flex;
+  align-items: center;
 }
-.header-navigation-list li {
+.header-navigation-list {
   list-style: none;
-  display: inline;
+  display: flex;
+}
+.header-address-list {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+.header-navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-address-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo-link {
+  display: block;
+  margin-right: 93px;
   text-decoration: none;
   color: var(--header-logo-text-color);
   font-family: 'Raleway', sans-serif;
@@ -108,12 +122,15 @@ body {
 }
 
 .header-navigation-list-item-link {
+  display: block;
   text-decoration: none;
   color: var(--header-navigation-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-navigation-list-item-link.current {
@@ -126,12 +143,15 @@ body {
 }
 
 .header-address-list-item-link {
+  display: block;
   text-decoration: none;
   color: var(--header-address-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-address-list-item-link:hover,
