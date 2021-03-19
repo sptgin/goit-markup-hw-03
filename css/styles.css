@@ -64,7 +64,7 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -274,7 +274,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   margin-top: 0;
-  margin-bottom: 0%;
+  margin-bottom: 0;
   justify-content: space-between;
 }
 
@@ -284,6 +284,12 @@ body {
 
 /* Секция "Наша команда" */
 .team-section {
+  display: block;
+  text-align: center;
+  height: 648px;
+  width: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--main-team-background-color);
   font-size: 16px;
   line-height: 1.18;
@@ -291,9 +297,41 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-team-text-color);
 }
-.team-section-list {
-  list-style: none;
+
+.team-section-header {
+  margin-top: 0;
+  margin-bottom: 50px;
 }
+.team-section-list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.team-section-list img {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-section-list-item {
+  display: block;
+  width: 270px;
+  background-color: var(--main-team-photo-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-section-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-section-header {
   color: var(--main-team-header-color);
   font-weight: 700;
