@@ -410,7 +410,7 @@ body {
 }
 
 .portfolio-filtr-project-list-item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .portfolio-filtr-project-button {
@@ -424,6 +424,7 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  padding: 6px 22px 6px 22px;
 }
 
 .portfolio-filtr-project-button:hover,
@@ -437,6 +438,7 @@ body {
 }
 
 .portfolio-project-list {
+  margin-top: 50px;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
