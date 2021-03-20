@@ -1,6 +1,7 @@
 :root {
   --body-default-text-color: #757575;
   --header-background-color: #ffffff;
+  --header-border-color: #ececec;
   --footer-background-color: #2f303a;
   --header-logo-color: #2196f3;
   --header-logo-text-color: #000000;
@@ -35,6 +36,7 @@
   --portfolio-project-list-background-color: #ffffff;
   --portfolio-project-list-header-color: #212121;
   --portfolio-project-list-text-color: #757575;
+  --portfolio-project-list-border-color: #eeeeee;
 
   --portfolio-button-color: #f5f4fa;
   --portfolio-button-text-color: #212121;
@@ -86,6 +88,7 @@ body {
   background-color: var(--header-background-color);
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--header-border-color);
 }
 .header-navigation-list {
   list-style: none;
@@ -128,8 +131,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-navigation-list-item-link.current {
@@ -149,8 +152,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-address-list-item-link:hover,
@@ -337,7 +340,13 @@ body {
   margin-right: 30px;
 }
 
+.team-section-list-card {
+  padding: 30px 20px 30px 20px;
+}
+
 .team-section-name {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--main-team-name-color);
   font-weight: 500;
   font-size: 16px;
@@ -345,10 +354,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.team-section-text {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
 /* Секция "Подвал" */
 .footer-section {
-  display: flex;
-  flex-direction: column;
   width: auto;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -397,6 +409,8 @@ body {
 .portfolio-project-section {
   background-color: var(--portfolio-project-list-background-color);
   color: var(--portfolio-project-list-text-color);
+  padding-top: 94px;
+  padding-bottom: 64px;
 }
 
 .portfolio-project-section h3 {
@@ -442,9 +456,28 @@ body {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-project-list img {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.portfolio-project-list-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-project-list-card {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid var(--portfolio-project-list-border-color);
 }
 
 .portfolio-project-header {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -453,6 +486,8 @@ body {
 }
 
 .portfolio-project-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
