@@ -402,8 +402,15 @@ body {
 .portfolio-project-section h3 {
   color: var(--portfolio-project-list-header-color);
 }
-.portfolio-filtr-project-list li {
-  display: inline;
+.portfolio-filtr-project-list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.portfolio-filtr-project-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .portfolio-filtr-project-button {
@@ -428,8 +435,11 @@ body {
   border: none;
   border-radius: 4px;
 }
+
 .portfolio-project-list {
+  display: flex;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .portfolio-project-header {
