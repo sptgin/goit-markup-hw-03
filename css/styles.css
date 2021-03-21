@@ -166,9 +166,9 @@ body {
 .hero-section {
   display: block;
   text-align: center;
-  height: 600px;
   width: auto;
   padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--main-hero-background-color);
 }
 .hero-section-header {
