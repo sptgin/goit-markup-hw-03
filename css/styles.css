@@ -494,6 +494,7 @@ body {
 .portfolio-project-list-card {
   padding: 20px 24px 20px 24px;
   border: 1px solid var(--portfolio-project-list-border-color);
+  border-top: 0;
 }
 
 .portfolio-project-header {
