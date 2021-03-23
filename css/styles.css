@@ -90,14 +90,26 @@ body {
   align-items: center;
   border-bottom: 1px solid var(--header-border-color);
 }
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
 .header-navigation-list {
   list-style: none;
   display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 .header-address-list {
   list-style: none;
   display: flex;
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 .header-navigation-list-item:not(:last-child) {
   margin-right: 50px;
@@ -115,6 +127,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 50px;
 }
 .logo-color {
   color: var(--header-logo-color);
@@ -173,7 +186,8 @@ body {
 }
 .hero-section-header {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -207,12 +221,14 @@ body {
 
 /* Секция "Особенности" */
 .features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-section-list {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   list-style: none;
