@@ -298,7 +298,6 @@ body {
   padding-right: 0;
   margin-top: 0;
   margin-bottom: 0;
-  justify-content: space-between;
 }
 
 .functions-section-list-item:not(:last-child) {
@@ -334,11 +333,10 @@ body {
   display: flex;
   list-style: none;
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: space-between;
 }
 
 .team-section-list img {
