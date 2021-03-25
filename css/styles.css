@@ -478,7 +478,10 @@ body {
 }
 
 .portfolio-project-list {
+  padding-left: 0;
+  padding-right: 0;
   margin-top: 50px;
+  margin-bottom: 0;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
